@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>OOJS: Task 1</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+  class Shape {
+
+    name;
+    sides;
+    sideLength;
+
+    constructor(name,sides,sideLength) {
+      this.name=name;
+      this.sides=sides;
+      this.sideLength=sideLength;
+    }//creo el constructor
+
+    calcPerimeter(){
+      console.log(`el perimetro del ${this.name} es ${this.sides*this.sideLength}`);
+    }//creo el metodo para calcular el perimetro y mostrarlo en la consola
+
+  }//creo la clase con sus propiedades y el metodo
+  
+  
+  var square=new Shape("square",4,5);//creo la instancia square
+  square.calcPerimeter();//utilizo el metodo calcPerimeter en square
+  var triangle=new Shape("triangle",3,3);//creo la instancia triangle
+  triangle.calcPerimeter();//utilizo el metodo calcPerimeter en triangle
+
+  </script>
+
+</html>
