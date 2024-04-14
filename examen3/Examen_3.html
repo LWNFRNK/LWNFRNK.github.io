@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Adivina el Numero</title>
+      
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Micro+5+Charted&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css"></link>
+  
+
+  <body>
+    <h1>Adivina el Número</h1>
+    <p>
+      Hay un número aleatorio entre 1 y 100. Tu deber es adivinarlo 
+      en 10 turnos o menos. Al enviar una respuesta se te dira si tu 
+      número es más alto o más bajo.
+      ¡Suerte!
+    </p>
+    <div class="juego">
+      <label >Adivina el numero: </label>
+      <input type="text" id="intento" class="intento" />
+      <input type="submit" value="Enviar respuesta" class="envio" />
+    </div>
+    <div class="resultados">
+      <p class="intentos"></p>
+      <p class="ultimo"></p>
+      <p class="pista"></p>
+    </div>
+    
+  </body>
+</html>
+
+<script src="Script.js"></script>
+
+
